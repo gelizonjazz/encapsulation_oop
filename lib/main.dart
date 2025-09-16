@@ -1,7 +1,7 @@
 import 'animal.dart';
 import 'dog.dart';
 import 'cat.dart';
-
+import 'bird.dart'
 
 
 class Animal {
@@ -51,5 +51,17 @@ class Cat extends Animal {
   // Unique method
   void meow() {
     print("$name says Meow!");
+  }
+}
+
+class Bird extends Animal {
+  double wingSpan; // Additional property
+
+  Bird(String name, int age, String habitat, this.wingSpan) 
+      : super(name, age, habitat);
+
+  // Unique method
+  void fly() {
+    print("$name is flying with a wingspan of $wingSpan meters!");
   }
 }
